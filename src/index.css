@@ -1,3 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/sora-3');
+
+* {
+  font-family: 'Sora', sans-serif;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -14,7 +20,7 @@
 
   --turq: "#3DB68C";
   --primary: #021928;
-  --none: "white"
+  --none: "white";
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,9 +30,14 @@
   }
   a:hover {
     color: #747bff;
+    transition: color 0.3s ease-in-out;
   }
   button {
     background-color: #f9f9f9;
+    transition: background-color 0.3s ease-in-out;
+  }
+  button:hover {
+    background-color: #e0e0e0;
   }
 }
 
@@ -41,11 +52,23 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #00F5A0; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
+  transition: background-color 0.3s ease-in-out;
 }
 
-@import url('https://fonts.cdnfonts.com/css/sora');
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #00c17c; /* color of the scroll thumb on hover */
+}
 
-*{
-  font-family: 'SORA', sans-serif;
-                                                
+/* Animación de fade-in para el contenido */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1s ease-in-out;
 }

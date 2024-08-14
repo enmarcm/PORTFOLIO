@@ -12,7 +12,6 @@ function App() {
 
       <Skills />
 
-      <div className="section h-screen bg-green-300">Contenido 3</div>
     </div>
   );
 }

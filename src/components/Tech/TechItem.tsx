@@ -3,10 +3,10 @@ const TechItem = ({ image, text}: TechItemInterface) => {
 
   return (
     <div className={`w-20 min-h-20 flex flex-col gap-2 items-center justify-center`}>
-      <img src={image} alt={text} className="object-cover  "  />
+  <img src={image} alt={text} className="w-20 h-20 object-cover" />
 
-      <p className="text-center text-sm font-extralight text-gray-400">{PARSED_TEXT}</p>
-    </div>
+  <p className="text-center text-sm font-extralight text-gray-400">{PARSED_TEXT}</p>
+</div>
   );
 };
 
