@@ -1,6 +1,7 @@
 import "tailwindcss/tailwind.css";
 import Init from "./pages/Init";
 import Navbar from "./components/Navbar";
+import Skills from "./pages/Skills";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
 
       <Init />
 
-      <div className="h-screen bg-yellow-300">Contenido 2</div>
+      <Skills />
 
       <div className="section h-screen bg-green-300">Contenido 3</div>
     </div>

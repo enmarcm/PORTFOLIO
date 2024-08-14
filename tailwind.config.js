@@ -11,6 +11,7 @@ export default {
       colors: {
         turq: "#3DB68C",
         primary: "#021928",
+        secondary: "#203444"
       },
       
     },
