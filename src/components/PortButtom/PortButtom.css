@@ -1,0 +1,40 @@
+::root {
+  --turq: #3db68c;
+  --green: #111f1a;
+}
+
+.port-buttom {
+  transition: transform 0.3s ease;
+}
+
+.port-buttom::after,
+.port-buttom::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  background-color: #3db68c;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.port-buttom:hover{
+    transform: translate(-10px, -8px);
+}
+
+.port-buttom:hover::before {
+    transform: translate(5px,4px);
+}
+
+.port-buttom:hover::after {
+    transform: translate(10px, 8px);
+}
+
+.port-buttom:active::before, .port-buttom:active::after {
+    transform: translate(0, 0);
+    background-color: var(--green);
+}
