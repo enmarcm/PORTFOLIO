@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import AboutMe from "./pages/AboutMe";
+import Certificates from "./pages/Certificates";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
       <Projects />
 
       <AboutMe />
+
+      <Certificates/>
+
+      <Footer/>
     </div>
   );
 }

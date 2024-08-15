@@ -10,8 +10,36 @@ const PROJECT_DATA = [
     img: defaultProject
   },
   {
-    number: "02",
+    number: "01",
     title: "Minijuego de plataformas",
+    description:
+      "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    img: defaultProject
+  },
+  {
+    number: "01",
+    title: "Desarrollo de aplicación de mensajería",
+    description:
+      "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    img: defaultProject
+  },
+  {
+    number: "01",
+    title: "Clon de Spotify",
+    description:
+      "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    img: defaultProject
+  },
+  {
+    number: "01",
+    title: "Pool de conexiones (sin librerías)",
+    description:
+      "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    img: defaultProject
+  },
+  {
+    number: "01",
+    title: "Sistema de sesiones",
     description:
       "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
     img: defaultProject

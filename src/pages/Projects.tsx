@@ -21,18 +21,23 @@ const Projects = () => {
           </h2>
         </div>
         <div className="w-full flex flex-col gap-16">
-          {PROJECT_DATA.map((project, index) => (
-            <ProjectItem
-              altImage={project.title}
-              title={project.title}
-              desc={project.description}
-              linkTo={project?.linkTo}
-              img={project.img}
-              number={project.number}
-              key={index}
-              position={verifyPar(index)}
-            />
-          ))}
+          {PROJECT_DATA.map((project, index) => {
+           const parsedIndex = (index + 1).toString();
+           const itemNumber = parsedIndex.length === 1 ? `0${parsedIndex}` : parsedIndex;
+
+            return (
+              <ProjectItem
+                altImage={project.title}
+                title={project.title}
+                desc={project.description}
+                linkTo={project?.linkTo}
+                img={project.img}
+                number={itemNumber}
+                key={index}
+                position={verifyPar(index)}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
