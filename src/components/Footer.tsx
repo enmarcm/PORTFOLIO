@@ -5,7 +5,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <section className="sm:flex-col md:flex-row bg-black w-full h-72 flex gap-10 items-start justify-between py-12 px-24 ">
+    <section className="lg:flex-row flex-col bg-black w-full h-72 flex gap-10 items-start justify-between py-12 px-24 ">
       <div className="flex gap-2 items-center justify-center">
         <FontAwesomeIcon icon={faPhone} color="white" />
 
