@@ -1,5 +1,6 @@
 import star from "../assets/star.svg";
 import imgAbout from "../assets/ABOUT.svg";
+import { INFO_DATA } from "../data/info";
 
 const AboutMe = () => {
   return (
@@ -17,11 +18,7 @@ const AboutMe = () => {
         <div className="w-full grid flex-grow place-items-center grid-cols-2">
           <div className="flex flex-col items-center justify-center">
             <p className="text-ms text-gray-300 font-light">
-              I'm a passionate, self-proclaimed designer who specializes in full
-              stack development (React.js & Node.js). I am very enthusiastic
-              about bringing the technical and visual aspects of digital
-              products to life. User experience, pixel perfect design, and
-              writing clear, readable, highly performant code matters to me.
+              {INFO_DATA.ABOUT_ME}
             </p>
           </div>
           <div className="flex flex-col items-center justify-center">

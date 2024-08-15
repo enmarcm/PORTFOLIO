@@ -2,6 +2,7 @@ import cube from "../assets/drawing.svg";
 import people from "../assets/main-draw.svg";
 import SocialBar from "../components/SocialBar/SocialBar";
 import Typewriter from "typewriter-effect";
+import { INFO_DATA } from "../data/info";
 
 const Init = () => {
   return (
@@ -39,14 +40,7 @@ const Init = () => {
 
           <div className="my-12 text-sm font-light text-start w-5/6">
             <p>
-              I'm Evren Shah Lorem Ipsum is simply dummy text of the printing
-              and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to specimen book. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Sit laborum
-              animi, nulla nihil neque vel incidunt obcaecati laboriosam veniam.
-              Veritatis, laborum nam? Et distinctio quibusdam accusamus.
-              Excepturi quod accusantium eveniet.
+              {INFO_DATA.HOME_DESCRIPTION}
             </p>
           </div>
 
