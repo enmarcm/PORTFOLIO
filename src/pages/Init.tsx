@@ -17,11 +17,11 @@ const Init = () => {
             Hello I`m
           </h2>
 
-          <h1 className="text-[4rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00F5A0] to-[#00D9F5]">
+          <h1 className="text-[3.5rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00F5A0] to-[#00D9F5]">
             Enmanuel Colina
           </h1>
 
-          <h2 className="text-[3.2rem] font-bold -mt-3">
+          <h2 className="text-[3rem] font-bold -mt-3">
             <Typewriter
               options={{
                 loop: true,
