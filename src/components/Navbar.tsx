@@ -32,18 +32,21 @@ const LogoText = () => (
 const ButtomsCenter = () => {
   return (
     <>
-      <a href="" className="text-lg font-semibold">
-        About
-      </a>
-      <a href="" className="text-lg font-semibold">
-        Contact
-      </a>
-      <a href="" className="text-lg font-semibold">
-        Projects
-      </a>
+      <ButtomCenter title="About" />
+      <ButtomCenter title="Contact" />
+      <ButtomCenter title="Projects" />
     </>
   );
 };
+
+const ButtomCenter = ({ title, to }: { title: string; to?: string }) => (
+  <a
+    href={to ? to : ""}
+    className="text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:text-yellow-400 "
+  >
+    {title}
+  </a>
+);
 
 const downloadPDF = async () => {
   // const pdfPath = "../../public/CV.pdf";

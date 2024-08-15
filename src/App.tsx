@@ -2,6 +2,7 @@ import "tailwindcss/tailwind.css";
 import Init from "./pages/Init";
 import Navbar from "./components/Navbar";
 import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <Init />
 
       <Skills />
+
+      <Projects/>
 
     </div>
   );
