@@ -1,6 +1,7 @@
 import cube from "../assets/drawing.svg";
 import people from "../assets/main-draw.svg";
 import SocialBar from "../components/SocialBar/SocialBar";
+import Typewriter from "typewriter-effect";
 
 const Init = () => {
   return (
@@ -19,11 +20,21 @@ const Init = () => {
             Enmanuel Colina
           </h1>
 
-          <h2 className="text-[3.5rem] font-bold -mt-3">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D3F500] to-[#00D9F5]">
-              FullStack Web
-            </span>
-            <span className="text-white"> Developer</span>
+          <h2 className="text-[3.2rem] font-bold -mt-3">
+            <Typewriter
+              options={{
+                loop: true,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString(
+                    '<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#D3F500] to-[#00D9F5]">FullStack Web</span><span class="text-white"> Developer</span>'
+                  )
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .start();
+              }}
+            />
           </h2>
 
           <div className="my-12 text-sm font-light text-start w-5/6">
