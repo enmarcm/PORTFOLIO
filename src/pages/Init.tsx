@@ -11,8 +11,8 @@ const Init = () => {
         <img src={cube} alt="Cube" className=" object-cover" />
       </div>
 
-      <div className="relative w-10/12 mx-auto flex z-20">
-        <div className="w-7/12 flex flex-col ">
+      <div className="relative w-10/12 mx-auto flex z-20 sm:flex-col">
+        <div className="w-7/12 flex flex-col sm:w-full">
           <h2 className="text-[2rem] font-normal text-white -mb-4">
             Hello I`m
           </h2>
@@ -47,7 +47,7 @@ const Init = () => {
           <SocialBar />
         </div>
 
-        <div className="w-5/12 flex flex-col items-center justify-center">
+        <div className="w-5/12 flex flex-col items-center justify-center sm:w-full">
           <div className="rounded-full  bg-transparent shadow-2xl p-8 w-10/12 ">
             <img src={people} alt="People" className=" object-cover " />
           </div>
