@@ -50,7 +50,7 @@ const ContentProject = ({
   <div className="flex flex-col items-start justify-center gap-4">
     <h4 className="text-white text-3xl font-bold">{number}</h4>
     <h4 className="text-white text-2xl font-bold">{title}</h4>
-    <p className="text-gray-500 text-sm font-extralight">{desc}</p>
+    <p className="text-gray-50 text-sm font-extralight">{desc}</p>
     <a
       href={linkTo}
       target="_blank"
