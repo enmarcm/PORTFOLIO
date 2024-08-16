@@ -18,7 +18,7 @@ const Init = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-7/12 flex flex-col items-start md:items-start text-left md:text-left order-2 md:order-none gap-4 mt-20 md:mt-0">
+        <div className="w-full md:w-7/12 flex flex-col items-start md:items-start text-left md:text-left order-2 md:order-none gap-4 mt-12 md:mt-0">
           <h2 className="text-[2rem] font-normal text-white -mb-4">
             Hello I`m
           </h2>
