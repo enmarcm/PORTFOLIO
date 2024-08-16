@@ -3,17 +3,17 @@ import PDF from "../../public/CV.pdf";
 
 const Navbar = () => {
   return (
-    <div className="sticky  w-full  bg-transparent  z-50 py-4">
-      <div className="w-10/12 mx-auto flex items-center ">
+    <div className="sticky w-full bg-transparent z-50 py-4">
+      <div className="w-10/12 mx-auto flex items-center">
         <div className="w-3/12 flex items-center">
           <LogoText />
         </div>
 
-        <div className="w-6/12 flex justify-center items-center gap-16">
+        <div className="w-6/12 md:flex justify-center items-center gap-16 hidden sm:flex">
           <ButtomsCenter />
         </div>
 
-        <div className="w-3/12 flex justify-end items-center">
+        <div className="w-3/12 hidden md:flex justify-end items-center">
           <div className="w-32">
             <PortButtom title="Resume" callback={downloadPDF} />
           </div>
@@ -42,14 +42,13 @@ const ButtomsCenter = () => {
 const ButtomCenter = ({ title, to }: { title: string; to?: string }) => (
   <a
     href={to ? to : ""}
-    className="text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:text-yellow-400 "
+    className="text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:text-yellow-400"
   >
     {title}
   </a>
 );
 
 const downloadPDF = async () => {
-  // const pdfPath = "../../public/CV.pdf";
   const pdfPath = PDF;
   const response = await fetch(pdfPath);
   const blob = await response.blob();

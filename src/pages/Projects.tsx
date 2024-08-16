@@ -13,7 +13,7 @@ const Projects = () => {
     <section className="bg-primary w-full min-h-screen h-full">
       <div className="w-10/12 flex flex-col gap-8 h-full mx-auto px-8 py-20">
         <div className="flex w-full items-center justify-start">
-          <h2 className="text-[3rem] font-bold -mt-8">
+          <h2 className="text-[2.5rem] font-bold -mt-8 md:text-[3rem]">
             My
             <span className="bg-gradient-to-r from-[#00F5A0] to-[#00D9F5] bg-clip-text text-transparent">
               Projects

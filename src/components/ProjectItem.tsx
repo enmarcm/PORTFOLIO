@@ -11,37 +11,19 @@ const ProjectItem = ({
   position = "left",
 }: ProjectItemInterface) => {
   return (
-    <div className="flex gap-10 justify-between items-center w-full ">
-      {position === "left" ? (
-        <>
-          <div className="w-5/12 flex flex-col items-start">
-            <ImgComponent img={img} altImage={altImage} />
-          </div>
+    <div className="flex flex-col sm:flex-row gap-10 justify-between items-center w-full">
+      <div className={`w-full sm:w-5/12 flex flex-col ${position === "left" ? "sm:order-1" : "sm:order-2"} items-start`}>
+        <ImgComponent img={img} altImage={altImage} />
+      </div>
 
-          <div className="w-7/12">
-            <ContentProject
-              number={number}
-              title={title}
-              desc={desc}
-              linkTo={linkTo}
-            />
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="w-7/12">
-            <ContentProject
-              number={number}
-              title={title}
-              desc={desc}
-              linkTo={linkTo}
-            />
-          </div>
-          <div className="w-5/12 flex flex-col items-end">
-            <ImgComponent img={img} altImage={altImage} />
-          </div>
-        </>
-      )}
+      <div className={`w-full sm:w-7/12 ${position === "left" ? "sm:order-2" : "sm:order-1"}`}>
+        <ContentProject
+          number={number}
+          title={title}
+          desc={desc}
+          linkTo={linkTo}
+        />
+      </div>
     </div>
   );
 };
@@ -50,7 +32,7 @@ const ImgComponent = ({ img, altImage }: { img: string; altImage: string }) => (
   <img
     src={img}
     alt={altImage}
-    className="rounded-lg shadow-sm backdrop-blur-sm object-cover p-18 max-w-[88%]"
+    className="rounded-lg shadow-sm backdrop-blur-sm object-cover p-18 w-full sm:max-w-[88%]"
   />
 );
 

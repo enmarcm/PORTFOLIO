@@ -7,8 +7,8 @@ const Certificates = () => {
     <section className="bg-primary w-full h-[35rem]">
       <div className="w-10/12 flex flex-col gap-8 h-full mx-auto px-8 py-20">
         <div className="flex w-full items-center justify-start">
-          <h2 className="text-[3rem] font-bold -mt-8">
-            <span className="bg-gradient-to-r from-[#D3F500] to-[#00D9F5] text-transparent bg-clip-text">
+        <h2 className="text-[2.5rem] font-bold -mt-8 md:text-[3rem]">
+        <span className="bg-gradient-to-r from-[#D3F500] to-[#00D9F5] text-transparent bg-clip-text">
               Certificates
             </span>
           </h2>
