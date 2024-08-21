@@ -2,6 +2,7 @@ import bootstrap from "/certificates/bootstrap.jpg";
 import java from "/certificates/java.jpg";
 import c from "/certificates/c.jpg";
 import canvas from "/certificates/canvas.jpg";
+import hacking from "/certificates/hacking.jpg"
 
 export enum INFO_DATA {
   PHONE = "+58 412 170 4005",
@@ -16,4 +17,5 @@ export const IMGS = [
   { src: java, alt: "Java Certificate" },
   { src: c, alt: "C Certificate" },
   { src: canvas, alt: "Canvas Certificate" },
+  { src: hacking, alt: "Hacking Certificate" },
 ];
