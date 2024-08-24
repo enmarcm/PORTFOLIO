@@ -80,15 +80,7 @@ const PROJECT_DATA = [
       "A full-stack application that allows users to upload encrypted Excel files containing bids. The application uses a private key for encryption and a public key for decryption, analyzes the bids, and identifies the lowest price to determine the winning bid.",
     img: defaultProject,
     linkTo: "https://github.com/enmarcm/BidAnalyzer"
-  },
-  {
-    number: "08",
-    title: "Virus C#",
-    description:
-      "A C# application that installs as a program, creating a service that continuously monitors a specified folder. Upon detecting the folder, it sends the data to a server via socket and encrypts the folder on the user's computer.",
-    img: defaultProject,
-    linkTo: "https://github.com/enmarcm/PredatorVirus"
-  },
-];
+  }
+]
 
 export default PROJECT_DATA;
