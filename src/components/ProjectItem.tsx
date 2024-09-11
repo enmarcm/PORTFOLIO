@@ -32,7 +32,7 @@ const ImgComponent = ({ img, altImage }: { img: string; altImage: string }) => (
   <img
     src={img}
     alt={altImage}
-    className="rounded-lg shadow-sm backdrop-blur-sm object-cover p-18 w-full sm:max-w-[88%]"
+    className="rounded-lg shadow-sm backdrop-blur-sm object-cover p-18 w-full sm:max-w-[88%] max-h-80"
   />
 );
 
