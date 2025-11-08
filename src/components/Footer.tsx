@@ -4,10 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { INFO_DATA } from "../data/info"
 import SocialBar from "./SocialBar/SocialBar"
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
-import { useLanguage } from "../context/LanguageContext"
 
 const Footer = () => {
-  const { t } = useLanguage()
 
   return (
     <section className="lg:flex-row flex-col bg-black w-full h-72 flex gap-10 lg:items-start lg:justify-between lg:py-12 lg:px-24 p-4  box-border overflow-hidden items-center justify-center">
