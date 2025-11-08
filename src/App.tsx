@@ -1,11 +1,12 @@
-import "tailwindcss/tailwind.css";
-import Init from "./pages/Init";
-import Navbar from "./components/Navbar";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
-import AboutMe from "./pages/AboutMe";
-import Certificates from "./pages/Certificates";
-import Footer from "./components/Footer";
+import "tailwindcss/tailwind.css"
+import Init from "./pages/Init"
+import Navbar from "./components/Navbar"
+import Skills from "./pages/Skills"
+import Projects from "./pages/Projects"
+import AboutMe from "./pages/AboutMe"
+import Experience from "./pages/Experience"
+import Certificates from "./pages/Certificates"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -14,17 +15,19 @@ function App() {
 
       <Init />
 
+      <Experience />
+
       <Skills />
 
       <Projects />
 
       <AboutMe />
 
-      <Certificates/>
+      <Certificates />
 
-      <Footer/>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

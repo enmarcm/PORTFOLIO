@@ -9,7 +9,7 @@ const TechItem = ({ image, text }: TechItemInterface) => {
         className="w-20 h-20 object-contain transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
       />
 
-      <p className="text-center text-sm font-extralight text-gray-400 transition-colors duration-300 ease-in-out hover:text-gray-200">
+      <p className="text-center text-sm font-extralight text-white transition-colors duration-300 ease-in-out">
         {PARSED_TEXT}
       </p>
     </div>
