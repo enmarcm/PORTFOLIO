@@ -74,6 +74,11 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
+/* Smooth scrolling for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Navbar.css */
 .sidebar-enter {
   transform: translateX(-100%);

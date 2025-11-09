@@ -12,12 +12,12 @@ const Init = () => {
   const { t, language } = useLanguage()
 
   return (
-    <section className="relative w-full min-h-screen bg-primary py-14">
+  <section className="relative w-full min-h-screen bg-primary py-8 sm:py-14">
       <div className="absolute -top-16 left-0 z-10 pointer-events-none opacity-45">
         <img src={cube || "/placeholder.svg"} alt="Cube" className="object-cover" />
       </div>
 
-      <div className="relative w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center md:items-start z-20">
+  <div className="relative w-11/12 sm:w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center md:items-start z-20 px-4 sm:px-0">
         <div className="sm:w-full md:w-5/12 flex flex-col items-center justify-center order-1 md:order-none">
           <div className="rounded-full bg-transparent shadow-2xl p-8 w-11/12">
             <img src={people || "/placeholder.svg"} alt="People" className="object-cover" />

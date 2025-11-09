@@ -10,8 +10,8 @@ const Projects = () => {
   const verifyPar = (index: number) => (index % 2 === 0 ? "left" : "right")
 
   return (
-    <section className="bg-primary w-full min-h-screen h-full">
-      <div className="w-10/12 flex flex-col gap-8 h-full mx-auto px-8 py-20">
+    <section id="projects" className="bg-primary w-full min-h-screen h-full scroll-mt-16">
+  <div className="w-11/12 sm:w-10/12 flex flex-col gap-6 h-full mx-auto px-4 sm:px-8 py-12 sm:py-20">
         <h2 className="text-[2.5rem] font-bold -mt-8 md:text-[3rem]">
           {t("projects.title")}
             <span className="bg-gradient-to-r from-[#00F5A0] to-[#00D9F5] bg-clip-text text-transparent"> {t("projects.featured")}</span>

@@ -10,12 +10,12 @@ const AboutMe = () => {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-secondary w-full min-h-screen relative">
+  <section id="about" className="bg-secondary w-full min-h-screen relative scroll-mt-16">
       <div className="absolute bottom-0 left-0  z-10 pointer-events-none opacity-45">
         <img src={star || "/placeholder.svg"} alt="Star" className=" object-cover" />
       </div>
 
-      <div className="w-10/12 flex flex-col gap-8 h-full mx-auto px-8 py-20">
+  <div className="w-11/12 sm:w-10/12 flex flex-col gap-6 h-full mx-auto px-4 sm:px-8 py-12 sm:py-20">
         <div className="flex w-full items-center justify-start">
           <h2 className="text-[2.5rem] font-bold -mt-8 md:text-[3rem]">
             {t("about.title")} <span className="text-turq">{t("about.me")}</span>

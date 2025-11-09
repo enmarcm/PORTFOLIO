@@ -51,7 +51,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="sticky w-full bg-transparent z-50 py-4">
+    <div className="fixed top-0 left-0 w-full bg-transparent z-50 py-4">
       <div className="w-10/12 mx-auto flex items-center justify-between">
         <div className="w-3/12 flex items-center">
           <LogoText />
@@ -92,7 +92,7 @@ const Navbar = () => {
             <button onClick={toggleSidebar} className="text-xl mb-4">
               ❌
             </button>
-            <ButtomsCenter />
+            <ButtomsCenter onItemClick={toggleSidebar} />
             <div className="mt-4">
               <PortButtom title={t("navbar.resume")} callback={() => downloadPDF()} />
             </div>
@@ -109,20 +109,21 @@ const LogoText = () => (
   </p>
 )
 
-const ButtomsCenter = () => {
+const ButtomsCenter = ({ onItemClick }: { onItemClick?: () => void }) => {
   const { t } = useLanguage()
   return (
     <>
-      <ButtomCenter title={t("navbar.about")} />
-      <ButtomCenter title={t("navbar.contact")} />
-      <ButtomCenter title={t("navbar.projects")} />
+      <ButtomCenter title={t("navbar.about")} to="#about" onClick={onItemClick} />
+      <ButtomCenter title={t("navbar.contact")} to="#contact" onClick={onItemClick} />
+      <ButtomCenter title={t("navbar.projects")} to="#projects" onClick={onItemClick} />
     </>
   )
 }
 
-const ButtomCenter = ({ title, to }: { title: string; to?: string }) => (
+const ButtomCenter = ({ title, to, onClick }: { title: string; to?: string; onClick?: () => void }) => (
   <a
-    href={to ? to : ""}
+    href={to || '#'}
+    onClick={onClick}
     className="text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:text-yellow-400 block py-2"
   >
     {title}

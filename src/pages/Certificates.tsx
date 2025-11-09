@@ -23,8 +23,8 @@ const Certificates = () => {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-primary w-full h-[35rem]">
-      <div className="w-10/12 flex flex-col gap-8 h-full mx-auto px-8 py-20">
+    <section className="bg-primary w-full h-auto">
+      <div className="w-11/12 sm:w-10/12 flex flex-col gap-6 h-full mx-auto px-4 sm:px-8 py-12 sm:py-20">
         <div className="flex w-full items-center justify-start">
           <h2 className="text-[2.5rem] font-bold -mt-8 md:text-[3rem]">
             <span className="bg-gradient-to-r from-[#D3F500] to-[#00D9F5] text-transparent bg-clip-text">
@@ -37,7 +37,7 @@ const Certificates = () => {
             spaceBetween={20}
             slidesPerView={1}
             onSlideChange={() => {}}
-            onSwiper={(_swiper) => {}}
+            onSwiper={() => {}}
             loop
             autoplay={AUTO_PLAY_CONFIG}
             breakpoints={BREAKPOINTS_CONFIG}

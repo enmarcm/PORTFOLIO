@@ -14,7 +14,7 @@ const Experience = () => {
         <img src={star || "/placeholder.svg"} alt="Star" className="object-cover" />
       </div>
 
-      <div className="w-10/12 flex flex-col gap-8 h-full mx-auto px-8 py-20">
+  <div className="w-11/12 sm:w-10/12 flex flex-col gap-6 h-full mx-auto px-4 sm:px-8 py-12 sm:py-20">
         <div className="flex w-full items-center justify-start">
           <h2 className="text-[2.5rem] font-bold -mt-8 md:text-[3rem]">
             {t("experience.title")} <span className="text-yellow-400">{t("experience.timeline")}</span>

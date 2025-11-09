@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
-    <div className="flex flex-col w-full h-full m-0 p-0 bg-primary">
+  <div className="flex flex-col w-full h-full m-0 p-0 bg-primary pt-16">
       <Navbar />
 
       <Init />

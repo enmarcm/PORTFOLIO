@@ -24,15 +24,15 @@ const ExperienceCard = ({ job, index }: ExperienceCardProps) => {
   const isEven = index % 2 === 0
 
   return (
-    <div className={`flex flex-col md:flex-row gap-8 ${isEven ? "md:flex-row-reverse" : ""}`}>
+    <div className={`flex flex-col md:flex-row gap-6 ${isEven ? "md:flex-row-reverse" : ""}`}>
       {/* Timeline dot */}
       <div className="flex flex-col items-center md:w-1/6">
-        <div className="w-4 h-4 bg-gradient-to-r from-[#00F5A0] to-[#00D9F5] rounded-full" />
-        {index < 1 && <div className="w-1 h-24 bg-gradient-to-b from-[#00F5A0] to-transparent mt-2" />}
+        <div className="w-3 h-3 md:w-4 md:h-4 bg-gradient-to-r from-[#00F5A0] to-[#00D9F5] rounded-full" />
+        {index < 1 && <div className="w-1 h-12 md:h-24 bg-gradient-to-b from-[#00F5A0] to-transparent mt-2" />}
       </div>
 
       {/* Content */}
-      <div className="md:w-5/6 bg-secondary bg-opacity-30 border border-gray-700 rounded-lg p-8 hover:border-yellow-400 transition-all duration-300">
+      <div className="md:w-5/6 bg-secondary bg-opacity-30 border border-gray-700 rounded-lg p-4 md:p-6 lg:p-8 hover:border-yellow-400 transition-all duration-300">
         <div className="mb-4">
           <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00F5A0] to-[#00D9F5]">
             {job.title}
